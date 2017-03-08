@@ -150,6 +150,11 @@ section {
 header[role='banner'] {
   padding: 66px 0 0 0;
 }
+@media (max-width: 640px) {
+  header[role='banner'] {
+    padding: 20px 0 0 0;
+  }
+}
 .header-top {
   padding: 0 25px 15px;
 }
@@ -176,6 +181,28 @@ header[role='banner'] {
 .header-top .to-order:active {
   line-height: 50px;
 }
+@media (max-width: 480px) {
+  .header-top {
+    padding: 0 10px 15px;
+  }
+  .header-top .social-links {
+    margin: 0;
+    width: 160px;
+  }
+  .header-top .social-links li {
+    margin: 0;
+  }
+  .header-top .to-order {
+    width: 120px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px solid #1ed0da;
+  }
+  .header-top .to-order:active {
+    line-height: 32px;
+  }
+}
 .header-nav {
   height: 55px;
   background: #000;
@@ -185,6 +212,7 @@ header[role='banner'] {
   display: block;
   width: 194px;
   float: left;
+  margin-left: -15px;
 }
 .header-nav .logo img {
   -webkit-transition: .4s;
@@ -242,6 +270,24 @@ header[role='banner'] {
 .header-nav nav ul li a.active:after {
   top: 10px;
   opacity: 1;
+}
+@media (max-width: 640px) {
+  .header-nav {
+    padding: 15px 10px;
+    height: auto;
+  }
+  .header-nav .logo {
+    float: none;
+  }
+  .header-nav nav {
+    float: none;
+  }
+  .header-nav nav ul li {
+    margin: 0 10px 0 0;
+  }
+  .header-nav nav ul li a {
+    line-height: 25px;
+  }
 }
 .header-banner {
   background: #504f4b;
@@ -321,6 +367,43 @@ header[role='banner'] {
 .header-banner .events span:last-of-type {
   font-size: 22px;
 }
+@media (max-width: 640px) {
+  .header-banner {
+    background: none;
+    padding: 25px;
+  }
+  .header-banner img {
+    display: none;
+  }
+  .header-banner .contacts {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    padding-left: 50px;
+  }
+  .header-banner .contacts .fa {
+    background: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .header-banner .events {
+    position: static;
+    margin-top: 25px;
+  }
+  .header-banner .events span {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .header-banner {
+    padding: 25px 10px;
+  }
+}
 /**********************************************************************************************************************
 ********** main
 ***********************************************************************************************************************/
@@ -328,6 +411,11 @@ main {
   display: block;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px 35px;
+}
+@media (max-width: 480px) {
+  main {
+    padding: 20px 10px;
+  }
 }
 /**********************************************************************************************************************
 ********** services
@@ -414,6 +502,23 @@ main {
   -moz-box-shadow: inset 0 0 0 6px #1ed0da;
   box-shadow: inset 0 0 0 6px #1ed0da;
 }
+@media (max-width: 480px) {
+  .services .slider-wrap {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+  }
+  .services .get-consultation {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .services h2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
 /**********************************************************************************************************************
 ********** price
 ***********************************************************************************************************************/
@@ -499,6 +604,23 @@ main {
   -moz-box-shadow: inset 0 0 0 6px #1ed0da;
   box-shadow: inset 0 0 0 6px #1ed0da;
 }
+@media (max-width: 480px) {
+  .price .slider-wrap {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+  }
+  .price .events {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .price h2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
 /**********************************************************************************************************************
 ********** reviews
 ***********************************************************************************************************************/
@@ -548,6 +670,17 @@ main {
 .reviews .review .review-text {
   font-size: 9px;
 }
+@media (max-width: 480px) {
+  .reviews .review {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .reviews .review img {
+    position: static;
+    margin: 0 auto 10px;
+  }
+}
 .reviews .slick-prev {
   display: none!important;
 }
@@ -559,6 +692,18 @@ main {
   bottom: -30px;
   color: #fff;
 }
+@media (max-width: 980px) {
+  .reviews {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .reviews .review {
+    height: auto;
+  }
+}
 /**********************************************************************************************************************
 ********** instagram-block
 ***********************************************************************************************************************/
@@ -568,6 +713,13 @@ main {
   background: #1ed0da;
   float: right;
   padding: 10px 20px 10px;
+}
+@media (max-width: 980px) {
+  .instagram-block {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
 }
 .instagram-title {
   width: 123px;
@@ -599,6 +751,11 @@ main {
   font-size: 10px;
   line-height: 1;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .instagram-data {
+    padding: 1px 10px 3px 50px;
+  }
 }
 .instagram-pictures {
   padding: 10px 15px;
@@ -712,6 +869,23 @@ main {
   -moz-box-shadow: inset 0 0 0 6px #1ed0da;
   box-shadow: inset 0 0 0 6px #1ed0da;
 }
+@media (max-width: 480px) {
+  .specialists .slider-wrap {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+  }
+  .specialists .solutions {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .specialists h2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
 /**********************************************************************************************************************
 ********** contacts-block
 ***********************************************************************************************************************/
@@ -783,6 +957,16 @@ main {
   color: #018f99;
   background: #fff;
 }
+@media (max-width: 768px) {
+  .contacts-block .on-map,
+  .contacts-block .contacts {
+    width: 100%;
+    float: none;
+  }
+  .contacts-block .contacts {
+    margin-top: 30px;
+  }
+}
 /**********************************************************************************************************************
 ********** footer
 ***********************************************************************************************************************/
@@ -829,6 +1013,7 @@ footer[role='contentinfo'] {
   margin: 0 5px 0 0;
 }
 .kip-block {
+  margin-top: 10px;
   width: 120px;
   float: right;
 }
@@ -845,4 +1030,17 @@ footer[role='contentinfo'] {
 }
 .kip-block span a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  footer[role='contentinfo'] .address {
+    position: static;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  footer[role='contentinfo'] {
+    padding: 25px 10px;
+  }
 }

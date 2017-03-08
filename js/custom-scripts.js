@@ -17,7 +17,27 @@ $(document).ready(function() {
         slidesToScroll: 1,
         appendArrows: '.control-services',
         prevArrow: '.control-services-prev',
-        nextArrow: '.control-services-next'
+        nextArrow: '.control-services-next',
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.slider-price').slick({
@@ -25,7 +45,27 @@ $(document).ready(function() {
         slidesToScroll: 1,
         appendArrows: '.control-price',
         prevArrow: '.control-price-prev',
-        nextArrow: '.control-price-next'
+        nextArrow: '.control-price-next',
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.slider-reviews').slick({
@@ -41,7 +81,27 @@ $(document).ready(function() {
         slidesToScroll: 1,
         appendArrows: '.control-specialists',
         prevArrow: '.control-specialists-prev',
-        nextArrow: '.control-specialists-next'
+        nextArrow: '.control-specialists-next',
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
 
