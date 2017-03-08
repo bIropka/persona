@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persona</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom-styles.css">
 </head>
@@ -19,7 +19,7 @@
 
         <header role="banner">
 
-            <div class="header-top">
+            <div class="header-top clearfix">
 
                 <ul class="social-links">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -32,21 +32,23 @@
 
             </div>
 
-            <div class="header-nav">
+            <div class="header-nav clearfix">
 
-                <a href="index.html" class="logo"></a>
+                <a href="index.html" class="logo"><img src="source/images/logo.png" alt="logo"></a>
 
                 <nav>
                     <ul>
-                        <li><a href="#">о салоне</a></li>
-                        <li><a href="#">услуги</a></li>
-                        <li><a href="#">прайс</a></li>
+                        <li><a href="#">О салоне</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Прайс</a></li>
                     </ul>
                 </nav>
 
             </div>
 
             <div class="header-banner">
+
+                <img src="source/images/background-top.png" alt="banner">
 
                 <div class="contacts">
 
@@ -76,11 +78,11 @@
 
         <main>
 
-            <div class="services">
+            <div class="services clearfix">
 
                 <h2>все услуги</h2>
 
-                <div class="slider-wrap">
+                <div class="slider-wrap clearfix">
 
                     <i class="fa fa-chevron-left control-services control-services-prev"></i>
                     <i class="fa fa-chevron-right control-services control-services-next"></i>
@@ -116,21 +118,21 @@
 
                 </div>
 
-                <div class="get-consultation">
+                <button class="get-consultation">
 
                     <img src="source/images/get-consultation.png" alt="image">
 
-                    <button>получить консультацию</button>
+                    <span>получить консультацию</span>
 
-                </div>
+                </button>
 
             </div>
 
-            <div class="price">
+            <div class="price clearfix">
 
                 <h2>прайс-лист</h2>
 
-                <div class="slider-wrap">
+                <div class="slider-wrap clearfix">
 
                     <i class="fa fa-chevron-left control-price control-price-prev"></i>
                     <i class="fa fa-chevron-right control-price control-price-next"></i>
@@ -166,144 +168,150 @@
 
                 </div>
 
-                <div class="events">
+                <button class="events">
 
                     <img src="source/images/events.png" alt="image">
 
                     <a href="#">акции</a>
 
+                </button>
+
+            </div>
+
+            <div class="reviews-block clearfix">
+
+                <div class="reviews">
+
+                    <h2>отзывы наших клиентов</h2>
+
+                    <div class="slider-wrap">
+
+                        <i class="fa fa-chevron-down control-reviews control-reviews-next"></i>
+
+                        <div class="slider-reviews">
+
+                            <div class="review">
+
+                                <img src="source/images/review-1.png" alt="image">
+
+                                <div class="reviewer-name">София</div>
+
+                                <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
+
+                            </div>
+
+                            <div class="review">
+
+                                <img src="source/images/review-2.png" alt="image">
+
+                                <div class="reviewer-name">Марго</div>
+
+                                <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
+
+                            </div>
+
+                            <div class="review">
+
+                                <img src="source/images/events.png" alt="image">
+
+                                <div class="reviewer-name">Имя 3</div>
+
+                                <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
+
+                            </div>
+
+                            <div class="review">
+
+                                <img src="source/images/experts.png" alt="image">
+
+                                <div class="reviewer-name">Имя 4</div>
+
+                                <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
+
+                            </div>
+
+                            <div class="review">
+
+                                <img src="source/images/get-consultation.png" alt="image">
+
+                                <div class="reviewer-name">Имя 5</div>
+
+                                <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="instagram-block">
+
+                    <div class="instagram-title">
+                        <img src="source/images/instagram.png" alt="instagram">
+                    </div>
+
+                    <div class="instagram-data">
+                        <div class="item">
+                            <div class="icon"><img src="source/images/instagram-icon-1.png" alt="icon"></div>
+                            <span class="value">107</span>
+                            <span class="title">photos</span>
+                        </div>
+                        <div class="item">
+                            <div class="icon"><img src="source/images/instagram-icon-2.png" alt="icon"></div>
+                            <span class="value">2752</span>
+                            <span class="title">followers</span>
+                        </div>
+                    </div>
+
+                    <div class="instagram-pictures clearfix">
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-1.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-2.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-3.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-4.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-5.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-6.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-7.png" alt="instagram">
+                        </div>
+
+                        <div class="image-wrap">
+                            <img src="source/images/instagram-8.png" alt="instagram">
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="come-to-us">присоединяйся</a>
+
                 </div>
 
             </div>
 
-            <div class="reviews">
-                
-                <h2>отзывы наших клиентов</h2>
-                
-                <div class="slider-wrap">
-
-                    <i class="fa fa-chevron-right control-services control-services-next"></i>
-
-                    <div class="slider-reviews">
-
-                        <div class="review">
-
-                            <img src="source/images/review-1.png" alt="image">
-
-                            <div class="reviewer-name">София</div>
-
-                            <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
-
-                        </div>
-
-                        <div class="review">
-
-                            <img src="source/images/review-2.png" alt="image">
-
-                            <div class="reviewer-name">Марго</div>
-
-                            <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
-
-                        </div>
-
-                        <div class="review">
-
-                            <img src="source/images/events.png" alt="image">
-
-                            <div class="reviewer-name">Имя 3</div>
-
-                            <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
-
-                        </div>
-
-                        <div class="review">
-
-                            <img src="source/images/experts.png" alt="image">
-
-                            <div class="reviewer-name">Имя 4</div>
-
-                            <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
-
-                        </div>
-
-                        <div class="review">
-
-                            <img src="source/images/get-consultation.png" alt="image">
-
-                            <div class="reviewer-name">Имя 5</div>
-
-                            <div class="review-text">Отзывы автоматом идут друг за другом снизу вверх. Стрелка, если кто-то сам хочет быстрее пролистнуть.</div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-                
-            </div>
-
-            <div class="instagram-block">
-
-                <div class="instagram-title">
-                    <img src="source/images/instagram.png" alt="instagram">
-                </div>
-                
-                <div class="instagram-data">
-                    <div class="item">
-                        <span class="value">107</span>
-                        <span class="title">photos</span>
-                    </div>
-                    <div class="item">
-                        <span class="value">2752</span>
-                        <span class="title">followers</span>
-                    </div>                    
-                </div>
-                
-                <div class="instagram-pictures">
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-1.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-2.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-3.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-4.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-5.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-6.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-7.png" alt="instagram">
-                    </div>
-
-                    <div class="image-wrap">
-                        <img src="source/images/instagram-8.png" alt="instagram">
-                    </div>
-
-                </div>
-
-                <a href="#" class="come-to-us">присоединяйся</a>
-
-            </div>
-
-            <div class="specialists">
+            <div class="specialists clearfix">
 
                 <h2>все мастера</h2>
 
-                <div class="slider-wrap">
+                <div class="slider-wrap clearfix">
 
                     <i class="fa fa-chevron-left control-specialists control-specialists-prev"></i>
                     <i class="fa fa-chevron-right control-specialists control-specialists-next"></i>
@@ -339,70 +347,74 @@
 
                 </div>
 
-                <div class="solutions">
+                <button class="solutions">
 
                     <img src="source/images/experts.png" alt="image">
 
                     <a href="#">советы экспертов</a>
 
-                </div>
+                </button>
 
             </div>
 
-            <div class="on-map"></div>
+            <div class="contacts-block clearfix">
 
-            <div class="contacts">
+                <div class="on-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=G-XqlFduNSFvhIcdJRb2k7X-FlMGRpyG&amp;width=100%25&amp;height=180&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+                </div>
 
-                <i class="fa fa-map-marker"></i>
-                
-                <span>ул.Маршала Катукова, 24, к.6</span>
+                <div class="contacts">
 
-                <span>10:00 - 22:00</span>
+                    <i class="fa fa-map-marker"></i>
 
-                <a href="mailto:example@email.com">example@email.com</a>
-                
-                <ul class="social-links">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-                
+                    <span>ул.Маршала Катукова, 24, к.6</span>
+
+                    <span>10:00 - 22:00</span>
+
+                    <a href="mailto:example@email.com">example@email.com</a>
+
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+
+                </div>
 
             </div>
 
         </main>
         
-        <footer role="contentinfo">
+        <footer role="contentinfo" class="clearfix">
+
+            <div class="address">
+                <span><span class="icon"><img src="source/images/M.png" alt="M"></span>Строгино, Мякинино, Щукинская.</span>
+                <span>ул. Маршала Катукова д. 24 кор. 6, код домофона 1,  ЖК «Янтарный Город»</span>
+                <span>Часы работы: с 10.00 - 22.00</span>
+            </div>
 
             <div class="footer-logo">
                 <a href="index.html" class="logo"><img src="source/images/logo.png" alt="logo"></a>
                 <a href="tel:+74951111111">+7 (495) 111-11-11</a>
             </div>
 
-            <div class="address">
-                <span>Строгино, Мякинино, Щукинская.</span>
-                <span>ул. Маршала Катукова д. 24 кор. 6, код домофона 1,  ЖК «Янтарный Город»</span>
-                <span>Часы работы: с 10.00 - 22.00</span>
-            </div>
-
             <div class="kip-block">
                 <a href="#">
                     <img src="source/images/kip-logo.png" alt="kip">
                 </a>
-                <a href="#">Сделано КИП-СЕРВИС в 2017</a>
+                <span>Сделано <a href="#">КИП-СЕРВИС</a> в 2017</span>
             </div>
 
         </footer>
 
     </div>
 
-
-
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 
